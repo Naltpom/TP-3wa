@@ -47,7 +47,7 @@ class Search
  * print_r($response);
  */
 
-$search = new Search('Bonjour');
-$response = $search->search_pos_seq_all('bonjour Bonjour hello. bonjour comment ca va bonjour');
+$search = new Search('jour');
+$response = $search->search_pos_seq_all('bonjOur BonJoUr hello. bonjour comment ca va bonjour journée');
 
 print_r($response);

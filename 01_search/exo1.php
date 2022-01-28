@@ -17,11 +17,11 @@ class Exo1
         foreach ($content as $key => $value) {
             if ($value === $seq[$count]) {
                 $count ++;
-                $pos = $key;
+                $pos = $pos === null ? $key : $pos;
             } elseif ($count === count($seq)) {
                 return $pos;
             } else {
-                $pos = [];
+                $pos = null;
                 $count = 0;
             }
         }
